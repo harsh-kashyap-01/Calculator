@@ -1,0 +1,96 @@
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    height: auto;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgb(19, 19, 19), rgb(12, 12, 12));
+    overflow: hidden;
+
+}
+button{
+    cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.buttons-container{
+    padding: 0px;
+    position: relative;
+    top: 20vh;
+}
+
+.number-key{
+    margin: 0px;
+    margin: 5px;
+    border: none;
+    width: 20%;
+    height: 8vh;
+    font-size: 20px;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    border-radius: 60px;
+    text-align: center;
+}
+
+.sign{
+    background-color: rgba(255, 166, 0, 0.884);
+}
+
+input{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 15vh;
+    height: 8vh;
+    background-color: rgb(26, 26, 26);
+    overflow: unset;
+    color: rgba(223, 222, 222, 0.932);
+    font-size: 40px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.menu-but{
+    width: 10%;
+    height: 4vh;
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+.menu-section{
+    width: 60%;
+    height: auto;
+    min-height: 90vh;
+    position: absolute;
+    top: 50px;
+    box-shadow: 0px 0px 5px 0.5px rgba(80, 80, 80, 0.685);
+    background-color: rgb(22, 22, 22);
+    transition: 0.3s;
+    left: -40vh;
+}
+.menu-btn{
+    width: 100%;
+    border: none;
+    background-color: rgb(21, 21, 21);
+    color: rgba(136, 134, 134, 0.829);
+    height: 8vh;
+}
+
+.menu-show{
+    position: absolute;
+    left: 0;
+}
