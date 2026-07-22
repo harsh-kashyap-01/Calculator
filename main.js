@@ -10,6 +10,9 @@ let input = document.getElementById("input-screen");
 buttons.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     input.value += btn.innerHTML;
+    if(btn.innerHTML === "C"){
+      input.value = "";
+    }
   });
 });
 
