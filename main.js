@@ -11,11 +11,23 @@ buttons.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     input.value += btn.innerHTML;
     if(btn.innerHTML === "C"){
-      input.value = "";
+        input.value = ""
     }
+
+    if(btn.innerHTML === "="){
+      let output = async(input.value);
+      input.value = output;
+    }
+
   });
 });
 
 function clear() {
   input.value = "";
+}
+
+
+function answer(){
+  let output = eval(input.value);
+  input.value = output;
 }
